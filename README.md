@@ -1,4 +1,4 @@
-# BlackOps3ScriptingPool
+# BlackOps3 Modding Stuff
 Repository to store and learn on modding using GSC on Call of Duty Black Ops 3 Mod Tools
 
 Currently there are two *mods*:
