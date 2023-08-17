@@ -1,0 +1,9 @@
+{
+    "Description": "𝗕𝗿𝗶𝗲𝗳 𝗱𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻\r\nGives some extra health to the second player playing on splitscreen. \r\n\r\n𝗪𝗵𝘆?\r\nTrying to learn some basic scripting stuff on BO3! So I wanted to help a redditor that asked for this specific feature while playing with his girlfriend.\r\n\r\n𝗟𝗼𝗴𝗶𝗰\r\nPlayers base health when spawning is 100, Juggernog just adds a +100 on the base health.\r\nThe splitscreen second player will now have 400 as base health, so 500 with Juggernog!\r\n\r\nThis mod does nothing if there's no splitscreen second player.\r\n",
+    "FolderName": "little_brother_mod",
+    "PublisherID": "3021782868",
+    "Tags": "Zombies",
+    "Thumbnail": "C:/Users/Francesco/Downloads/Senza titolo-1.png",
+    "Title": "Little Brother Mod",
+    "Type": "mod"
+}

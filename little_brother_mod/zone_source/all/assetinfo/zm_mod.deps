@@ -8,12 +8,14 @@ ignore_missing_shipped,core_common
 ignore_missing_shipped,zm_common
 ignore_missing_shipped,zm_patch
 scriptparsetree,scripts\zm\gametypes\_clientids.gsc
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\tutorial_mod\scripts\zm\gametypes\_clientids.gsc,1692302157,
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\little_brother_mod\scripts\zm\gametypes\_clientids.gsc,1692311452,
 	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\shared.gsh,1690906541,
+rawfile,dummy.cfg
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\dummy.cfg,1690906684,
 texturecombo,zm_mod
 assetlist,zm_mod
 	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\gamedata\playeranim\playeranimtypes.txt,1690906374,
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\tutorial_mod\zone_source\zm_mod.zone,1690997976,f423f7a4,48ed87c8,9a8bb7ad,f553c591
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\little_brother_mod\zone_source\zm_mod.zone,1692303177,824b6daf,10822092,3d2c9de2,66170025
 	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\zone_source\zm_mod.class,1690906542,
 	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\zone_source\mod_default.class,1690906378,
 	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\zone_source\default.class,1690906466,

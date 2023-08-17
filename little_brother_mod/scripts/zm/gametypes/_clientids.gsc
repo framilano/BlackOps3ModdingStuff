@@ -5,8 +5,6 @@
 #using scripts\shared\callbacks_shared;
 #using scripts\shared\system_shared;
 #using scripts\shared\flag_shared;
-#using scripts\shared\ai_shared;
-//#using scripts\zm\gametypes\_zm_commands;
 
 
 #namespace clientids;
@@ -37,7 +35,7 @@ function on_player_connect() {
 
 function set_player_max_health(player) {
 	for (;;) {
-		IPrintLnBold("Player Max Health: " + player.maxHealth);
+		//IPrintLnBold("Player Max Health: " + player.maxHealth);
 		player SetMaxHealth(400);
 		while(player.maxHealth == 400) wait(1);
 	}
@@ -45,25 +43,25 @@ function set_player_max_health(player) {
 
 function on_player_spawn() {
 	level flag::wait_till("initial_blackscreen_passed");
-	IPrintLnBold("Hello, welcome to my mod!");
+	IPrintLnBold("Welcome to Little Brother Mod");
 
+	wait (6);
+	
 	players = getPlayers();
 	if (players.size == 1) {
 		IPrintLnBold("Only one player detected...");
 		return;
 	}
 
-
-	//If player name contains _1, then we give him extra health
+	//If player name contains " 1", then we give him extra health
+	found_second_player = false;
 	foreach (player in players) {
-		if (IsSubStr(player.name, "_1")) thread set_player_max_health(players[1]);
+		if (IsSubStr(player.name, " 1")) {
+			IPrintLnBold("Settings increased health to " + player.name);
+			found_second_player = true;
+			thread set_player_max_health(player);
+		}
 	}
-	
-	IPrintLnBold("Now Zombies ignore you");
-	//self ai::set_ignoreme( true );
 
-	IPrintLnBold("You're now invincible");
-	//self EnableInvulnerability();
-
-	//self thread zm_commands::wait_for_points_command();
+	if (!found_second_player) IPrintLnBold("No splitscreen player detected...");
 }
