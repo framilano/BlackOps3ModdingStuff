@@ -1,3 +1,7 @@
 rawfile,dummy.cfg
 scriptparsetree,scripts/zm/gametypes/_clientids.gsc
+scriptparsetree,scripts/zm/gametypes/_zm_lilbro_health.gsc
+scriptparsetree,scripts/zm/gametypes/_zm_lilbro_perks.gsc
+scriptparsetree,scripts/zm/gametypes/_zm_lilbro_points.gsc
+scriptparsetree,scripts/zm/gametypes/_zm_lilbro_weapons.gsc
 keyvaluepairs,zm_mod

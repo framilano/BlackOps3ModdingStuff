@@ -1,2 +1,3 @@
 scriptparsetree,scripts/zm/gametypes/_clientids.gsc
+scriptparsetree,scripts/zm/gametypes/_zm_commands.gsc
 keyvaluepairs,zm_mod

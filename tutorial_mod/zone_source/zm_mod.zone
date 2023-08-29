@@ -4,3 +4,4 @@
 #include "zm_mod.class"
 
 scriptparsetree,scripts\zm\gametypes\_clientids.gsc
+scriptparsetree,scripts\zm\gametypes\_zm_commands.gsc

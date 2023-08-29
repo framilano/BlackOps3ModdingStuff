@@ -4,6 +4,10 @@
 #include "zm_mod.class"
 
 scriptparsetree,scripts\zm\gametypes\_clientids.gsc
+scriptparsetree,scripts\zm\gametypes\_zm_lilbro_health.gsc
+scriptparsetree,scripts\zm\gametypes\_zm_lilbro_weapons.gsc
+scriptparsetree,scripts\zm\gametypes\_zm_lilbro_points.gsc
+scriptparsetree,scripts\zm\gametypes\_zm_lilbro_perks.gsc
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 rawfile,dummy.cfg

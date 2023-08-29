@@ -5,7 +5,10 @@
 #using scripts\shared\callbacks_shared;
 #using scripts\shared\system_shared;
 #using scripts\shared\flag_shared;
-
+#using scripts\zm\gametypes\_zm_lilbro_health;
+#using scripts\zm\gametypes\_zm_lilbro_weapons;
+#using scripts\zm\gametypes\_zm_lilbro_points;
+#using scripts\zm\gametypes\_zm_lilbro_perks;
 
 #namespace clientids;
 
@@ -21,31 +24,13 @@ function init() {
 	// this is now handled in code ( not lan )
 	// see s_nextScriptClientId 
 	level.clientid = 0;
-}
 
-function on_player_connect() {
-	self.clientid = matchRecordNewPlayer( self );
-	if ( !isdefined( self.clientid ) || self.clientid == -1 )
-	{
-		self.clientid = level.clientid;
-		level.clientid++;	// Is this safe? What if a server runs for a long time and many people join/leave
-	}
+	//MOD START HERE!
 
-}
-
-function set_player_max_health(player) {
-	for (;;) {
-		//IPrintLnBold("Player Max Health: " + player.maxHealth);
-		player SetMaxHealth(400);
-		while(player.maxHealth == 400) wait(1);
-	}
-}
-
-function on_player_spawn() {
 	level flag::wait_till("initial_blackscreen_passed");
 	IPrintLnBold("Welcome to Little Brother Mod");
 
-	wait (6);
+	wait (3);
 	
 	players = getPlayers();
 	if (players.size == 1) {
@@ -57,11 +42,51 @@ function on_player_spawn() {
 	found_second_player = false;
 	foreach (player in players) {
 		if (IsSubStr(player.name, " 1")) {
-			IPrintLnBold("Settings increased health to " + player.name);
 			found_second_player = true;
-			thread set_player_max_health(player);
+			player player_health_setup();
+			player player_weapons_setup();
+			player player_points_setup();
+			player player_perks_setup();
 		}
 	}
 
 	if (!found_second_player) IPrintLnBold("No splitscreen player detected...");
 }
+
+function on_player_connect() {
+	self.clientid = matchRecordNewPlayer( self );
+	if ( !isdefined( self.clientid ) || self.clientid == -1 ){
+		self.clientid = level.clientid;
+		level.clientid++;	// Is this safe? What if a server runs for a long time and many people join/leave
+	}
+}
+
+function on_player_spawn() {
+}
+
+function player_health_setup() {
+	player = self;
+	zm_lilbro_health::init();
+	player thread zm_lilbro_health::set_lilbro_maxhealth();
+	player thread zm_lilbro_health::listen_to_maxhealth_command();
+}
+
+function player_weapons_setup() {
+	player = self;
+	zm_lilbro_weapons::init();
+	player thread zm_lilbro_weapons::set_lilbro_upgraded_weapons();
+	player thread zm_lilbro_weapons::listen_to_upgraded_weapons_command();
+}
+
+function player_points_setup() {
+	player = self;
+	player thread zm_lilbro_points::listen_to_points_command();
+}
+
+function player_perks_setup() {
+	player = self;
+	player zm_lilbro_perks::init();
+	player thread zm_lilbro_perks::listen_to_retain_perks_command();
+}
+
+

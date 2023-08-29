@@ -6,7 +6,10 @@
 #using scripts\shared\system_shared;
 #using scripts\shared\flag_shared;
 #using scripts\shared\ai_shared;
-//#using scripts\zm\gametypes\_zm_commands;
+#using scripts\zm\gametypes\_zm_commands;
+#using scripts\zm\_zm_score;
+
+#using scripts\zm\_zm_perks;
 
 
 #namespace clientids;
@@ -35,12 +38,14 @@ function on_player_connect() {
 
 }
 
-function set_player_max_health(player) {
-	for (;;) {
-		IPrintLnBold("Player Max Health: " + player.maxHealth);
-		player SetMaxHealth(400);
-		while(player.maxHealth == 400) wait(1);
+function retrieve_all_perks() {
+	vending_triggers = GetEntArray( "zombie_vending", "targetname" );
+	perks = [];
+	foreach (trigger in vending_triggers) {
+		perk = trigger.script_noteworthy;
+		perks[perks.size] = perk;
 	}
+	return perks;
 }
 
 function on_player_spawn() {
@@ -48,22 +53,23 @@ function on_player_spawn() {
 	IPrintLnBold("Hello, welcome to my mod!");
 
 	players = getPlayers();
-	if (players.size == 1) {
-		IPrintLnBold("Only one player detected...");
-		return;
-	}
-
-
-	//If player name contains _1, then we give him extra health
-	foreach (player in players) {
-		if (IsSubStr(player.name, "_1")) thread set_player_max_health(players[1]);
-	}
 	
-	IPrintLnBold("Now Zombies ignore you");
+	//IPrintLnBold("Now Zombies ignore you");
 	//self ai::set_ignoreme( true );
 
-	IPrintLnBold("You're now invincible");
+	//IPrintLnBold("You're now invincible");
 	//self EnableInvulnerability();
 
-	//self thread zm_commands::wait_for_points_command();
+	//perks = retrieve_all_perks();
+	//IPrintLnBold("There are " + perks.size +" perks in this map");
+
+	wait(5);
+	foreach(player in players) {
+		zm_perks::vending_trigger_post_think(player, "specialty_armorvest");
+		wait(10);
+		player giveWeapon(GetWeapon("ray_gun"));
+		player zm_score::add_to_player_score( 99999 );
+	}
+
+	thread zm_commands::wait_for_points_command(players);
 }
