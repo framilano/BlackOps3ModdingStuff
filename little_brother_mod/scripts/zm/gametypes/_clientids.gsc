@@ -20,6 +20,11 @@ function __init__() {
 	callback::on_spawned( &on_player_spawn );
 }	
 
+/**
+Callback when a match starts
+Waiting for the blackscreen to finish before loading all the options
+If a second player is present, then we setup health, weapons, points and perks modifications
+ */
 function init() {
 	// this is now handled in code ( not lan )
 	// see s_nextScriptClientId 
@@ -53,6 +58,9 @@ function init() {
 	if (!found_second_player) IPrintLnBold("No splitscreen player detected...");
 }
 
+/**
+Callback when a player has connected
+ */
 function on_player_connect() {
 	self.clientid = matchRecordNewPlayer( self );
 	if ( !isdefined( self.clientid ) || self.clientid == -1 ){
@@ -61,9 +69,16 @@ function on_player_connect() {
 	}
 }
 
+/**
+Callback when a player has spawned
+ */
 function on_player_spawn() {
 }
 
+/**
+Calls module zm_lilbro_health and set the new maxHealth for self (aka player)
+It even listens to max_health command to dynamically change the maxHealth
+ */
 function player_health_setup() {
 	player = self;
 	zm_lilbro_health::init();
@@ -71,6 +86,10 @@ function player_health_setup() {
 	player thread zm_lilbro_health::listen_to_maxhealth_command();
 }
 
+/**
+Calls module zm_lilbro_weapon and continously checks for un-upgraded weapon on player hands
+It even listens to upgrade_weapons command to customize upgrading weapons process
+ */
 function player_weapons_setup() {
 	player = self;
 	zm_lilbro_weapons::init();
@@ -78,11 +97,18 @@ function player_weapons_setup() {
 	player thread zm_lilbro_weapons::listen_to_upgraded_weapons_command();
 }
 
+/**
+	Listens to the points command using the zm_lilbro_points module
+ */
 function player_points_setup() {
 	player = self;
 	player thread zm_lilbro_points::listen_to_points_command();
 }
 
+/**
+Calls module zm_lilbro_perks and adds default perks for player
+It even listens to retain_perks command
+ */
 function player_perks_setup() {
 	player = self;
 	player zm_lilbro_perks::init();

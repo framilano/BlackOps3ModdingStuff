@@ -4,7 +4,7 @@ index,type,name,resident,streamed,parentStack
 3,scriptparsetree,scripts/zm/gametypes/_zm_lilbro_health.gsc,820,0,|zone_source/zm_mod.zone|csv
 4,scriptparsetree,scripts/zm/gametypes/_zm_lilbro_weapons.gsc,2684,0,|zone_source/zm_mod.zone|csv
 5,scriptparsetree,scripts/zm/gametypes/_zm_lilbro_points.gsc,624,0,|zone_source/zm_mod.zone|csv
-6,scriptparsetree,scripts/zm/gametypes/_zm_lilbro_perks.gsc,1272,0,|zone_source/zm_mod.zone|csv
+6,scriptparsetree,scripts/zm/gametypes/_zm_lilbro_perks.gsc,1288,0,|zone_source/zm_mod.zone|csv
 7,rawfile,dummy.cfg,16,0,|zone_source/zm_mod.zone|csv
 8,keyvaluepairs,zm_mod,1114,0,||assetlist
 9,assetlist,,112,0,

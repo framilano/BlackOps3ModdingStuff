@@ -17,9 +17,11 @@ function init() {
 	player.perk_limit = LILBRO_PERK_LIMIT;
 	level.get_player_perk_purchase_limit = &get_perk_limit;
 
-	zm_perks::vending_trigger_post_think(player, "specialty_armorvest");
-	zm_perks::vending_trigger_post_think(player, "specialty_fastreload");
-	zm_perks::vending_trigger_post_think(player, "specialty_staminup");
+	player zm_perks::give_perk("specialty_armorvest", false);
+	wait(3);
+	player zm_perks::give_perk("specialty_fastreload", false);
+	wait(3);
+	player zm_perks::give_perk("specialty_staminup", false);
 
 }
 
