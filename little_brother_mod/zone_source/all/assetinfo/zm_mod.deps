@@ -8,39 +8,39 @@ ignore_missing_shipped,core_common
 ignore_missing_shipped,zm_common
 ignore_missing_shipped,zm_patch
 scriptparsetree,scripts\zm\gametypes\_clientids.gsc
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\little_brother_mod\scripts\zm\gametypes\_clientids.gsc,1693313241,
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\shared.gsh,1690906541,
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\little_brother_mod\scripts\zm\gametypes\_clientids.gsc,1693483855,
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\shared.gsh,1705079689,
 scriptparsetree,scripts\zm\gametypes\_zm_lilbro_health.gsc
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\little_brother_mod\scripts\zm\gametypes\_zm_lilbro_health.gsc,1692748882,
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\shared.gsh,1690906541,
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\little_brother_mod\scripts\zm\gametypes\_zm_lilbro_health.gsc,1692745282,
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\shared.gsh,1705079689,
 scriptparsetree,scripts\zm\gametypes\_zm_lilbro_weapons.gsc
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\little_brother_mod\scripts\zm\gametypes\_zm_lilbro_weapons.gsc,1692754340,
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\shared.gsh,1690906541,
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\aat_zm.gsh,1690906466,
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\little_brother_mod\scripts\zm\gametypes\_zm_lilbro_weapons.gsc,1692750740,
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\shared.gsh,1705079689,
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\aat_zm.gsh,1705079790,
 scriptparsetree,scripts\zm\gametypes\_zm_lilbro_points.gsc
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\little_brother_mod\scripts\zm\gametypes\_zm_lilbro_points.gsc,1692661020,
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\shared.gsh,1690906541,
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\little_brother_mod\scripts\zm\gametypes\_zm_lilbro_points.gsc,1692657420,
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\shared.gsh,1705079689,
 scriptparsetree,scripts\zm\gametypes\_zm_lilbro_perks.gsc
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\little_brother_mod\scripts\zm\gametypes\_zm_lilbro_perks.gsc,1693486088,
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\shared.gsh,1690906541,
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\little_brother_mod\scripts\zm\gametypes\_zm_lilbro_perks.gsc,1693482488,
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\shared.gsh,1705079689,
 rawfile,dummy.cfg
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\dummy.cfg,1690906684,
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\dummy.cfg,1705079851,
 texturecombo,zm_mod
 assetlist,zm_mod
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\gamedata\playeranim\playeranimtypes.txt,1690906374,
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\little_brother_mod\zone_source\zm_mod.zone,1693311549,22251ce9,7be2a637,b07ec4a5,f8d26bf7
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\zone_source\zm_mod.class,1690906542,
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\zone_source\mod_default.class,1690906378,
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\zone_source\default.class,1690906466,
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\zone_source\base_patch.zpkg,1690906574,5a76b7f7,40123946,eb5bedee,b0ac8d77
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\zone_source\all\assetlist\core_pre_gfx.csv,1690906594,9a291896,f3713a9b,75a0b66e,703a40af
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\zone_source\all\assetlist\core_patch.csv,1690906576,414521c8,b00c4bd2,1cb776ba,dd6e2742
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\zone_source\all\assetlist\core_gfx.csv,1690906464,eb35b869,6f0759a0,375b27d8,7e4abcbc
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\zone_source\all\assetlist\core_post_gfx.csv,1690906613,c5b160fe,8def529b,2bc851dc,de320c91
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\zone_source\all\assetlist\core_ui.csv,1690906638,6eac37ef,af745f35,9f02acd6,5ef64937
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\zone_source\all\assetlist\core_common.csv,1690906275,019dcec6,25201477,4f369f35,6e14d2d0
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\zone_source\all\assetlist\zm_common.csv,1690906612,13082a68,1dc6b820,d17e526c,1388be90
-	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\zone_source\all\assetlist\zm_patch.csv,1690906464,f50ca787,734c91b5,790ad58b,fcf5905b
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\gamedata\playeranim\playeranimtypes.txt,1705079750,
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\little_brother_mod\zone_source\zm_mod.zone,1693307949,22251ce9,7be2a637,b07ec4a5,f8d26bf7
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\zone_source\zm_mod.class,1705079688,
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\zone_source\mod_default.class,1705079653,
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\zone_source\default.class,1705079720,
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\zone_source\base_patch.zpkg,1705079790,5a76b7f7,40123946,eb5bedee,b0ac8d77
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\zone_source\all\assetlist\core_pre_gfx.csv,1705079824,9a291896,f3713a9b,75a0b66e,703a40af
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\zone_source\all\assetlist\core_patch.csv,1705079696,414521c8,b00c4bd2,1cb776ba,dd6e2742
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\zone_source\all\assetlist\core_gfx.csv,1705079669,eb35b869,6f0759a0,375b27d8,7e4abcbc
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\zone_source\all\assetlist\core_post_gfx.csv,1705079729,c5b160fe,8def529b,2bc851dc,de320c91
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\zone_source\all\assetlist\core_ui.csv,1705079696,6eac37ef,af745f35,9f02acd6,5ef64937
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\zone_source\all\assetlist\core_common.csv,1705079608,019dcec6,25201477,4f369f35,6e14d2d0
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\zone_source\all\assetlist\zm_common.csv,1705079761,13082a68,1dc6b820,d17e526c,1388be90
+	file,D:\Giochi\SteamLibrary\steamapps\common\Call of Duty Black Ops III\zone_source\all\assetlist\zm_patch.csv,1705079696,f50ca787,734c91b5,790ad58b,fcf5905b
 	spawn,expect,core_all
 	spawn,expect,zm_common_all
 errorcount,0
